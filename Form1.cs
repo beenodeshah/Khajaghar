@@ -21,5 +21,16 @@ namespace Khajaghar
         {
 
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            mainForm frm = new mainForm();
+            frm.Show();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
