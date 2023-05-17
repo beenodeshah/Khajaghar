@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace Khajaghar
 {
-    public partial class mainForm : Form
+    public partial class userForm : Form
     {
-        public mainForm()
+        public userForm()
         {
             InitializeComponent();
-            lblDateTime.Text = DateTime.Now.ToString();
-        }
-
-        private void tmDateTime_Tick(object sender, EventArgs e)
-        {
-            lblDateTime.Text = DateTime.Now.ToString();
         }
     }
 }

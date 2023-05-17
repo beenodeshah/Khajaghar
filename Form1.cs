@@ -24,8 +24,16 @@ namespace Khajaghar
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            mainForm frm = new mainForm();
-            frm.Show();
+            if(txtUserName.Text=="User" && txtPassword.Text=="User")
+            {
+                mainForm frm=new mainForm();
+                frm.Show();
+            }
+            else if(txtUserName.Text=="Admin" && txtPassword.Text=="Admin")
+            {
+                AdminForm frm = new AdminForm();
+                frm.Show();
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)
