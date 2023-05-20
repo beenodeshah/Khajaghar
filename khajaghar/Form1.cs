@@ -28,11 +28,13 @@ namespace Khajaghar
             {
                 mainForm frm=new mainForm();
                 frm.Show();
+                this.Hide();   
             }
             else if(txtUserName.Text=="Admin" && txtPassword.Text=="Admin")
             {
                 AdminForm frm = new AdminForm();
                 frm.Show();
+                this.Hide();
             }
         }
 

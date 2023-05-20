@@ -111,6 +111,7 @@
             // cross
             // 
             this.cross.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cross.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cross.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cross.ForeColor = System.Drawing.SystemColors.Control;
             this.cross.Location = new System.Drawing.Point(760, -2);

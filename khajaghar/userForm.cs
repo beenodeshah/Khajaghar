@@ -16,5 +16,15 @@ namespace Khajaghar
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void cross_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

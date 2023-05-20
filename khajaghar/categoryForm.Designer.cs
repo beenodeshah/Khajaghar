@@ -80,7 +80,7 @@
             this.textBox2.Location = new System.Drawing.Point(131, 95);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(384, 65);
+            this.textBox2.Size = new System.Drawing.Size(384, 99);
             this.textBox2.TabIndex = 3;
             // 
             // textBox1
@@ -199,6 +199,7 @@
             // cross
             // 
             this.cross.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cross.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cross.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cross.ForeColor = System.Drawing.SystemColors.Control;
             this.cross.Location = new System.Drawing.Point(1060, -1);
@@ -224,7 +225,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(219)))), ((int)(((byte)(197)))));
-            this.ClientSize = new System.Drawing.Size(1100, 700);
+            this.ClientSize = new System.Drawing.Size(1100, 648);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cross);
             this.Controls.Add(this.panel2);
