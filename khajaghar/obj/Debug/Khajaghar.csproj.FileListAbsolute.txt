@@ -1,0 +1,17 @@
+F:\khajaghar\bin\Debug\Khajaghar.exe.config
+F:\khajaghar\bin\Debug\Khajaghar.exe
+F:\khajaghar\bin\Debug\Khajaghar.pdb
+F:\khajaghar\obj\Debug\Khajaghar.csproj.AssemblyReference.cache
+F:\khajaghar\obj\Debug\Khajaghar.csproj.SuggestedBindingRedirects.cache
+F:\khajaghar\obj\Debug\Khajaghar.categoryForm.resources
+F:\khajaghar\obj\Debug\Khajaghar.customerForm.resources
+F:\khajaghar\obj\Debug\Khajaghar.Form1.resources
+F:\khajaghar\obj\Debug\Khajaghar.AdminForm.resources
+F:\khajaghar\obj\Debug\Khajaghar.mainForm.resources
+F:\khajaghar\obj\Debug\Khajaghar.menuItemsForm.resources
+F:\khajaghar\obj\Debug\Khajaghar.Properties.Resources.resources
+F:\khajaghar\obj\Debug\Khajaghar.userForm.resources
+F:\khajaghar\obj\Debug\Khajaghar.csproj.GenerateResource.cache
+F:\khajaghar\obj\Debug\Khajaghar.csproj.CoreCompileInputs.cache
+F:\khajaghar\obj\Debug\Khajaghar.exe
+F:\khajaghar\obj\Debug\Khajaghar.pdb
