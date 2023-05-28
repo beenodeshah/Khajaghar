@@ -173,6 +173,7 @@
             this.btnDeleteMenuItems.TabIndex = 2;
             this.btnDeleteMenuItems.Text = "Delete Menu Items";
             this.btnDeleteMenuItems.UseVisualStyleBackColor = true;
+            this.btnDeleteMenuItems.Click += new System.EventHandler(this.btnDeleteMenuItems_Click);
             // 
             // btnEditMenuItems
             // 
@@ -182,6 +183,7 @@
             this.btnEditMenuItems.TabIndex = 1;
             this.btnEditMenuItems.Text = "Edit Menu Items";
             this.btnEditMenuItems.UseVisualStyleBackColor = true;
+            this.btnEditMenuItems.Click += new System.EventHandler(this.btnEditMenuItems_Click);
             // 
             // btnCreateMenuItems
             // 
@@ -207,6 +209,7 @@
             this.dgvItemDetails.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvItemDetails.Size = new System.Drawing.Size(762, 173);
             this.dgvItemDetails.TabIndex = 3;
+            this.dgvItemDetails.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItemDetails_CellClick);
             // 
             // menuItemsForm
             // 

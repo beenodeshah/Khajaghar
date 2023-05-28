@@ -28,29 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.txtIdentificationNumber = new System.Windows.Forms.TextBox();
+            this.txtIdentificationType = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtMobileNo = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtCustomerName = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnEditCustomerDetails = new System.Windows.Forms.Button();
+            this.btnAddCustomerDetails = new System.Windows.Forms.Button();
+            this.dgvCustomerDetails = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomerDetails)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -65,12 +70,12 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtIdentificationNumber);
+            this.groupBox1.Controls.Add(this.txtIdentificationType);
+            this.groupBox1.Controls.Add(this.txtEmail);
+            this.groupBox1.Controls.Add(this.txtMobileNo);
+            this.groupBox1.Controls.Add(this.txtAddress);
+            this.groupBox1.Controls.Add(this.txtCustomerName);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
@@ -84,50 +89,47 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Please provide all the fields";
             // 
-            // label2
+            // txtIdentificationNumber
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Customer Name:";
+            this.txtIdentificationNumber.Location = new System.Drawing.Point(176, 161);
+            this.txtIdentificationNumber.Name = "txtIdentificationNumber";
+            this.txtIdentificationNumber.Size = new System.Drawing.Size(299, 26);
+            this.txtIdentificationNumber.TabIndex = 11;
             // 
-            // label3
+            // txtIdentificationType
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 52);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 20);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Address:";
+            this.txtIdentificationType.Location = new System.Drawing.Point(176, 132);
+            this.txtIdentificationType.Name = "txtIdentificationType";
+            this.txtIdentificationType.Size = new System.Drawing.Size(299, 26);
+            this.txtIdentificationType.TabIndex = 10;
             // 
-            // label4
+            // txtEmail
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 80);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 20);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Mobile No:";
+            this.txtEmail.Location = new System.Drawing.Point(176, 103);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(299, 26);
+            this.txtEmail.TabIndex = 9;
             // 
-            // label5
+            // txtMobileNo
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 111);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 20);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Email:";
+            this.txtMobileNo.Location = new System.Drawing.Point(176, 74);
+            this.txtMobileNo.Name = "txtMobileNo";
+            this.txtMobileNo.Size = new System.Drawing.Size(299, 26);
+            this.txtMobileNo.TabIndex = 8;
             // 
-            // label6
+            // txtAddress
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 136);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(142, 20);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Identification Type:";
+            this.txtAddress.Location = new System.Drawing.Point(176, 47);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(299, 26);
+            this.txtAddress.TabIndex = 7;
+            // 
+            // txtCustomerName
+            // 
+            this.txtCustomerName.Location = new System.Drawing.Point(176, 18);
+            this.txtCustomerName.Name = "txtCustomerName";
+            this.txtCustomerName.Size = new System.Drawing.Size(299, 26);
+            this.txtCustomerName.TabIndex = 6;
             // 
             // label7
             // 
@@ -138,110 +140,147 @@
             this.label7.TabIndex = 5;
             this.label7.Text = "Identification Number:";
             // 
-            // textBox1
+            // label6
             // 
-            this.textBox1.Location = new System.Drawing.Point(176, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(299, 26);
-            this.textBox1.TabIndex = 6;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(7, 136);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(142, 20);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Identification Type:";
             // 
-            // textBox2
+            // label5
             // 
-            this.textBox2.Location = new System.Drawing.Point(176, 47);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(299, 26);
-            this.textBox2.TabIndex = 7;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 111);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 20);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Email:";
             // 
-            // textBox3
+            // label4
             // 
-            this.textBox3.Location = new System.Drawing.Point(176, 74);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(299, 26);
-            this.textBox3.TabIndex = 8;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(7, 80);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(83, 20);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Mobile No:";
             // 
-            // textBox4
+            // label3
             // 
-            this.textBox4.Location = new System.Drawing.Point(176, 103);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(299, 26);
-            this.textBox4.TabIndex = 9;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(7, 52);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 20);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Address:";
             // 
-            // textBox5
+            // label2
             // 
-            this.textBox5.Location = new System.Drawing.Point(176, 132);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(299, 26);
-            this.textBox5.TabIndex = 10;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(176, 161);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(299, 26);
-            this.textBox6.TabIndex = 11;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(7, 26);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(128, 20);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Customer Name:";
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnClose);
+            this.panel1.Controls.Add(this.btnDelete);
+            this.panel1.Controls.Add(this.btnEditCustomerDetails);
+            this.panel1.Controls.Add(this.btnAddCustomerDetails);
             this.panel1.Location = new System.Drawing.Point(501, 79);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(314, 184);
+            this.panel1.Size = new System.Drawing.Size(433, 184);
             this.panel1.TabIndex = 2;
             // 
-            // button1
+            // btnClose
             // 
-            this.button1.Location = new System.Drawing.Point(4, 1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(303, 44);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Add Customer Details";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnClose.Location = new System.Drawing.Point(4, 133);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(422, 44);
+            this.btnClose.TabIndex = 3;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnDelete
             // 
-            this.button2.Location = new System.Drawing.Point(4, 45);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(303, 44);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Edit Customer Details";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnDelete.Location = new System.Drawing.Point(4, 90);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(422, 44);
+            this.btnDelete.TabIndex = 2;
+            this.btnDelete.Text = "Delete Customer Details";
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnEditCustomerDetails
             // 
-            this.button3.Location = new System.Drawing.Point(4, 90);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(303, 44);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Delete Customer Details";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnEditCustomerDetails.Location = new System.Drawing.Point(4, 45);
+            this.btnEditCustomerDetails.Name = "btnEditCustomerDetails";
+            this.btnEditCustomerDetails.Size = new System.Drawing.Size(422, 44);
+            this.btnEditCustomerDetails.TabIndex = 1;
+            this.btnEditCustomerDetails.Text = "Edit Customer Details";
+            this.btnEditCustomerDetails.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnAddCustomerDetails
             // 
-            this.button4.Location = new System.Drawing.Point(4, 133);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(303, 44);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Close";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnAddCustomerDetails.Location = new System.Drawing.Point(4, 1);
+            this.btnAddCustomerDetails.Name = "btnAddCustomerDetails";
+            this.btnAddCustomerDetails.Size = new System.Drawing.Size(422, 44);
+            this.btnAddCustomerDetails.TabIndex = 0;
+            this.btnAddCustomerDetails.Text = "Add CustomerDetails";
+            this.btnAddCustomerDetails.UseVisualStyleBackColor = true;
+            this.btnAddCustomerDetails.Click += new System.EventHandler(this.btnAddCustomerDetails_Click);
             // 
-            // dataGridView1
+            // dgvCustomerDetails
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 266);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(802, 258);
-            this.dataGridView1.TabIndex = 3;
+            this.dgvCustomerDetails.AllowUserToAddRows = false;
+            this.dgvCustomerDetails.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.dgvCustomerDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvCustomerDetails.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCustomerDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvCustomerDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCustomerDetails.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvCustomerDetails.Location = new System.Drawing.Point(13, 266);
+            this.dgvCustomerDetails.Name = "dgvCustomerDetails";
+            this.dgvCustomerDetails.ReadOnly = true;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCustomerDetails.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvCustomerDetails.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvCustomerDetails.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvCustomerDetails.Size = new System.Drawing.Size(921, 258);
+            this.dgvCustomerDetails.TabIndex = 3;
             // 
             // customerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(827, 578);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(956, 578);
+            this.Controls.Add(this.dgvCustomerDetails);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
@@ -253,7 +292,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomerDetails)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,12 +302,12 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtIdentificationNumber;
+        private System.Windows.Forms.TextBox txtIdentificationType;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtMobileNo;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox txtCustomerName;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -276,10 +315,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnEditCustomerDetails;
+        private System.Windows.Forms.Button btnAddCustomerDetails;
+        private System.Windows.Forms.DataGridView dgvCustomerDetails;
     }
 }
