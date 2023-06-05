@@ -27,25 +27,19 @@ namespace Khajaghar
             if(txtUserName.Text=="User" && txtPassword.Text=="User")
             {
                 mainForm frm=new mainForm();
+                frm.lblUser.Text = txtUserName.Text;
                 frm.Show();
-                this.Hide();   
             }
             else if(txtUserName.Text=="Admin" && txtPassword.Text=="Admin")
             {
                 AdminForm frm = new AdminForm();
                 frm.Show();
-                this.Hide();
             }
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

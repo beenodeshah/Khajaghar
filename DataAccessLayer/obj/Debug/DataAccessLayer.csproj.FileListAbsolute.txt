@@ -1,0 +1,6 @@
+H:\Tivra Institute of IT Training Center\Khajaghar\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+H:\Tivra Institute of IT Training Center\Khajaghar\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+H:\Tivra Institute of IT Training Center\Khajaghar\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+H:\Tivra Institute of IT Training Center\Khajaghar\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+H:\Tivra Institute of IT Training Center\Khajaghar\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+H:\Tivra Institute of IT Training Center\Khajaghar\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

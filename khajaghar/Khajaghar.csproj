@@ -116,7 +116,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="userForm.resx">
       <DependentUpon>userForm.cs</DependentUpon>
@@ -139,21 +138,6 @@
       <Project>{2cb8548a-277c-4627-b477-037f3518b502}</Project>
       <Name>DataAccessLayer</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user-avatar-with-check-mark.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\menu.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\customer-service.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\list-option.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\team.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -40,10 +40,5 @@ namespace Khajaghar
             customerForm frm=new customerForm();
             frm.ShowDialog();
         }
-
-        private void cross_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
     }
 }

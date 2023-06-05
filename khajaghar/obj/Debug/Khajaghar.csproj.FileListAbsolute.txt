@@ -1,17 +1,20 @@
-F:\khajaghar\bin\Debug\Khajaghar.exe.config
-F:\khajaghar\bin\Debug\Khajaghar.exe
-F:\khajaghar\bin\Debug\Khajaghar.pdb
-F:\khajaghar\obj\Debug\Khajaghar.csproj.AssemblyReference.cache
-F:\khajaghar\obj\Debug\Khajaghar.csproj.SuggestedBindingRedirects.cache
-F:\khajaghar\obj\Debug\Khajaghar.categoryForm.resources
-F:\khajaghar\obj\Debug\Khajaghar.customerForm.resources
-F:\khajaghar\obj\Debug\Khajaghar.Form1.resources
-F:\khajaghar\obj\Debug\Khajaghar.AdminForm.resources
-F:\khajaghar\obj\Debug\Khajaghar.mainForm.resources
-F:\khajaghar\obj\Debug\Khajaghar.menuItemsForm.resources
-F:\khajaghar\obj\Debug\Khajaghar.Properties.Resources.resources
-F:\khajaghar\obj\Debug\Khajaghar.userForm.resources
-F:\khajaghar\obj\Debug\Khajaghar.csproj.GenerateResource.cache
-F:\khajaghar\obj\Debug\Khajaghar.csproj.CoreCompileInputs.cache
-F:\khajaghar\obj\Debug\Khajaghar.exe
-F:\khajaghar\obj\Debug\Khajaghar.pdb
+H:\Tivra Institute of IT Training Center\Khajaghar\Khajaghar\bin\Debug\Khajaghar.exe.config
+H:\Tivra Institute of IT Training Center\Khajaghar\Khajaghar\bin\Debug\Khajaghar.exe
+H:\Tivra Institute of IT Training Center\Khajaghar\Khajaghar\bin\Debug\Khajaghar.pdb
+H:\Tivra Institute of IT Training Center\Khajaghar\Khajaghar\bin\Debug\DataAccessLayer.dll
+H:\Tivra Institute of IT Training Center\Khajaghar\Khajaghar\bin\Debug\DataAccessLayer.pdb
+H:\Tivra Institute of IT Training Center\Khajaghar\Khajaghar\obj\Debug\Khajaghar.csproj.AssemblyReference.cache
+H:\Tivra Institute of IT Training Center\Khajaghar\Khajaghar\obj\Debug\Khajaghar.csproj.SuggestedBindingRedirects.cache
+H:\Tivra Institute of IT Training Center\Khajaghar\Khajaghar\obj\Debug\Khajaghar.categoryForm.resources
+H:\Tivra Institute of IT Training Center\Khajaghar\Khajaghar\obj\Debug\Khajaghar.customerForm.resources
+H:\Tivra Institute of IT Training Center\Khajaghar\Khajaghar\obj\Debug\Khajaghar.Form1.resources
+H:\Tivra Institute of IT Training Center\Khajaghar\Khajaghar\obj\Debug\Khajaghar.AdminForm.resources
+H:\Tivra Institute of IT Training Center\Khajaghar\Khajaghar\obj\Debug\Khajaghar.mainForm.resources
+H:\Tivra Institute of IT Training Center\Khajaghar\Khajaghar\obj\Debug\Khajaghar.menuItemsForm.resources
+H:\Tivra Institute of IT Training Center\Khajaghar\Khajaghar\obj\Debug\Khajaghar.Properties.Resources.resources
+H:\Tivra Institute of IT Training Center\Khajaghar\Khajaghar\obj\Debug\Khajaghar.userForm.resources
+H:\Tivra Institute of IT Training Center\Khajaghar\Khajaghar\obj\Debug\Khajaghar.csproj.GenerateResource.cache
+H:\Tivra Institute of IT Training Center\Khajaghar\Khajaghar\obj\Debug\Khajaghar.csproj.CoreCompileInputs.cache
+H:\Tivra Institute of IT Training Center\Khajaghar\Khajaghar\obj\Debug\Khajaghar.csproj.CopyComplete
+H:\Tivra Institute of IT Training Center\Khajaghar\Khajaghar\obj\Debug\Khajaghar.exe
+H:\Tivra Institute of IT Training Center\Khajaghar\Khajaghar\obj\Debug\Khajaghar.pdb
