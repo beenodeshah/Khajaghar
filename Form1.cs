@@ -27,6 +27,7 @@ namespace Khajaghar
             if(txtUserName.Text=="User" && txtPassword.Text=="User")
             {
                 mainForm frm=new mainForm();
+                frm.lblUser.Text = txtUserName.Text;
                 frm.Show();
             }
             else if(txtUserName.Text=="Admin" && txtPassword.Text=="Admin")
