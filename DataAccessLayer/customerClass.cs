@@ -94,5 +94,26 @@ namespace DataAccessLayer
             }
             finally { conn.Close(); }
         }
+        public DataTable getcustomerAccountByAccountNumber(String AccountNumber)
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                SqlCommand cmd = new SqlCommand(@"Select customerName,mobileNo,AccountNumber from customerTable
+                                                where AccountNumber like '%' + @AccountNumber + '%'", conn);
+                cmd.Parameters.AddWithValue("@AccountNumber", AccountNumber);
+                conn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                dt.Load(dr);
+                conn.Close();
+                return dt;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally { conn.Close(); }
+        }
     }
 }

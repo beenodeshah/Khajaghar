@@ -109,6 +109,7 @@ namespace Khajaghar
         {
             paymentType = "Credit";
             transactionForm frm = new transactionForm();
+            frm.txtAmount.Text = txtNetTotal.Text;
             frm.ShowDialog();
         }
 
