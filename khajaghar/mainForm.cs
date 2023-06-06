@@ -123,9 +123,10 @@ namespace Khajaghar
                     Double.Parse(txtGrandTotal.Text),
                     Double.Parse(txtDiscount.Text), 1);
                 if(result==true) { MessageBox.Show("Bill Successfully Saved!!!");
-                    dgvKOTDetails.DataSource = kc.getAllKOT();
-                    dgvOrderDetails.Rows.Clear();
+                    dgvOrderDetails.DataSource=null;
                     lblKOTNumber.Text = "0";
+                    dgvKOTDetails.DataSource = kc.getAllKOT();
+                    
                 }
                 else { MessageBox.Show("Error in performing the required operation!!!"); }
             }
