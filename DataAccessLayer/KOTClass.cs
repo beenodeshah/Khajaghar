@@ -48,10 +48,12 @@ namespace DataAccessLayer
         {
             try
             {
+                SqlCommand cmd = new SqlCommand(@"select * from kotTable where KOTId not in
+                                                   (select k.KOTId from KOTTable k,billTable b where k.KOTId=b.KOTId)", conn);
+
                 DataTable dt = new DataTable();
-                SqlCommand cmd = new SqlCommand(@"Select * from KOTTable", conn);
                 conn.Open();
-                SqlDataReader dr=cmd.ExecuteReader();
+                SqlDataReader dr = cmd.ExecuteReader();
                 dt.Load(dr);
                 conn.Close();
                 return dt;

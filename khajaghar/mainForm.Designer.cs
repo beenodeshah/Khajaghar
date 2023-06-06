@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvKOTDetails = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -44,6 +44,10 @@
             this.dtpKOTDate = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtRemarks = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtQuantity = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.btnDeleteOrders = new System.Windows.Forms.Button();
             this.btnEditOrders = new System.Windows.Forms.Button();
             this.cmbFoodItemName = new System.Windows.Forms.ComboBox();
@@ -57,8 +61,8 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnSaveBillAndPrint = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rdbCredit = new System.Windows.Forms.RadioButton();
+            this.rdbCash = new System.Windows.Forms.RadioButton();
             this.label10 = new System.Windows.Forms.Label();
             this.txtNetTotal = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -71,10 +75,6 @@
             this.lblUser = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.tmDateTime = new System.Windows.Forms.Timer(this.components);
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtQuantity = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txtRemarks = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKOTDetails)).BeginInit();
             this.panel1.SuspendLayout();
@@ -105,8 +105,8 @@
             // 
             this.dgvKOTDetails.AllowUserToAddRows = false;
             this.dgvKOTDetails.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Green;
-            this.dgvKOTDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Green;
+            this.dgvKOTDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvKOTDetails.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvKOTDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKOTDetails.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -235,6 +235,39 @@
             this.panel2.Size = new System.Drawing.Size(1369, 80);
             this.panel2.TabIndex = 0;
             // 
+            // txtRemarks
+            // 
+            this.txtRemarks.Location = new System.Drawing.Point(167, 38);
+            this.txtRemarks.Multiline = true;
+            this.txtRemarks.Name = "txtRemarks";
+            this.txtRemarks.Size = new System.Drawing.Size(879, 38);
+            this.txtRemarks.TabIndex = 15;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(9, 49);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(77, 20);
+            this.label12.TabIndex = 14;
+            this.label12.Text = "Remarks:";
+            // 
+            // txtQuantity
+            // 
+            this.txtQuantity.Location = new System.Drawing.Point(946, 10);
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.Size = new System.Drawing.Size(100, 26);
+            this.txtQuantity.TabIndex = 13;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(868, 12);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(72, 20);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Quantity:";
+            // 
             // btnDeleteOrders
             // 
             this.btnDeleteOrders.Location = new System.Drawing.Point(1261, -1);
@@ -323,8 +356,8 @@
             // 
             this.dgvOrderDetails.AllowUserToAddRows = false;
             this.dgvOrderDetails.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.dgvOrderDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.dgvOrderDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvOrderDetails.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvOrderDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvOrderDetails.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -360,39 +393,42 @@
             this.btnSaveBillAndPrint.TabIndex = 12;
             this.btnSaveBillAndPrint.Text = "Save Bill and Print";
             this.btnSaveBillAndPrint.UseVisualStyleBackColor = true;
+            this.btnSaveBillAndPrint.Click += new System.EventHandler(this.btnSaveBillAndPrint_Click);
             // 
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel5.Controls.Add(this.radioButton2);
-            this.panel5.Controls.Add(this.radioButton1);
+            this.panel5.Controls.Add(this.rdbCredit);
+            this.panel5.Controls.Add(this.rdbCash);
             this.panel5.Controls.Add(this.label10);
             this.panel5.Location = new System.Drawing.Point(-2, -2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(289, 51);
             this.panel5.TabIndex = 6;
             // 
-            // radioButton2
+            // rdbCredit
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(207, 17);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(69, 24);
-            this.radioButton2.TabIndex = 9;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Credit";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdbCredit.AutoSize = true;
+            this.rdbCredit.Location = new System.Drawing.Point(207, 17);
+            this.rdbCredit.Name = "rdbCredit";
+            this.rdbCredit.Size = new System.Drawing.Size(69, 24);
+            this.rdbCredit.TabIndex = 9;
+            this.rdbCredit.TabStop = true;
+            this.rdbCredit.Text = "Credit";
+            this.rdbCredit.UseVisualStyleBackColor = true;
+            this.rdbCredit.CheckedChanged += new System.EventHandler(this.rdbCredit_CheckedChanged);
             // 
-            // radioButton1
+            // rdbCash
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(137, 17);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(64, 24);
-            this.radioButton1.TabIndex = 8;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Cash";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdbCash.AutoSize = true;
+            this.rdbCash.Location = new System.Drawing.Point(137, 17);
+            this.rdbCash.Name = "rdbCash";
+            this.rdbCash.Size = new System.Drawing.Size(64, 24);
+            this.rdbCash.TabIndex = 8;
+            this.rdbCash.TabStop = true;
+            this.rdbCash.Text = "Cash";
+            this.rdbCash.UseVisualStyleBackColor = true;
+            this.rdbCash.CheckedChanged += new System.EventHandler(this.rdbCash_CheckedChanged);
             // 
             // label10
             // 
@@ -502,39 +538,6 @@
             this.tmDateTime.Interval = 1000;
             this.tmDateTime.Tick += new System.EventHandler(this.tmDateTime_Tick);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(868, 12);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 20);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Quantity:";
-            // 
-            // txtQuantity
-            // 
-            this.txtQuantity.Location = new System.Drawing.Point(946, 10);
-            this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(100, 26);
-            this.txtQuantity.TabIndex = 13;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(9, 49);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(77, 20);
-            this.label12.TabIndex = 14;
-            this.label12.Text = "Remarks:";
-            // 
-            // txtRemarks
-            // 
-            this.txtRemarks.Location = new System.Drawing.Point(167, 38);
-            this.txtRemarks.Multiline = true;
-            this.txtRemarks.Name = "txtRemarks";
-            this.txtRemarks.Size = new System.Drawing.Size(879, 38);
-            this.txtRemarks.TabIndex = 15;
-            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -597,8 +600,8 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnSaveBillAndPrint;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rdbCredit;
+        private System.Windows.Forms.RadioButton rdbCash;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtNetTotal;
         private System.Windows.Forms.Label label9;

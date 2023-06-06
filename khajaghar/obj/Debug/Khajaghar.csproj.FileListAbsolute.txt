@@ -18,3 +18,4 @@ H:\Tivra Institute of IT Training Center\Khajaghar\Khajaghar\obj\Debug\Khajaghar
 H:\Tivra Institute of IT Training Center\Khajaghar\Khajaghar\obj\Debug\Khajaghar.csproj.CopyComplete
 H:\Tivra Institute of IT Training Center\Khajaghar\Khajaghar\obj\Debug\Khajaghar.exe
 H:\Tivra Institute of IT Training Center\Khajaghar\Khajaghar\obj\Debug\Khajaghar.pdb
+H:\Tivra Institute of IT Training Center\Khajaghar\Khajaghar\obj\Debug\Khajaghar.transactionForm.resources

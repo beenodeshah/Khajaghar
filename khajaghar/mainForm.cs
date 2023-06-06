@@ -31,8 +31,10 @@ namespace Khajaghar
         itemClass ic = new itemClass();
         KOTClass kc = new KOTClass();
         orderClass oc = new orderClass();
+        billClass bc=new billClass();
         int KOTId = 0, orderId = 0;
         Double discount,grandTotal,netTotal;
+        String paymentType = "";
         private void tmDateTime_Tick(object sender, EventArgs e)
         {
             lblDateTime.Text = DateTime.Now.ToString();
@@ -101,6 +103,41 @@ namespace Khajaghar
 
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void rdbCredit_CheckedChanged(object sender, EventArgs e)
+        {
+            paymentType = "Credit";
+            transactionForm frm = new transactionForm();
+            frm.ShowDialog();
+        }
+
+        private void btnSaveBillAndPrint_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                bool result=bc.manageBills(0,
+                    int.Parse(lblKOTNumber.Text),
+                    paymentType,
+                    Double.Parse(txtGrandTotal.Text),
+                    Double.Parse(txtDiscount.Text), 1);
+                if(result==true) { MessageBox.Show("Bill Successfully Saved!!!");
+                    dgvKOTDetails.DataSource = kc.getAllKOT();
+                    dgvOrderDetails.Rows.Clear();
+                    lblKOTNumber.Text = "0";
+                }
+                else { MessageBox.Show("Error in performing the required operation!!!"); }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void rdbCash_CheckedChanged(object sender, EventArgs e)
+        {
+            paymentType = "Cash";
         }
 
         private void txtDiscount_TextChanged(object sender, EventArgs e)

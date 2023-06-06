@@ -25,7 +25,7 @@ namespace DataAccessLayer
             try
             {
                 bool result = false;
-                SqlCommand cmd = new SqlCommand("sp_managecustomers",conn);
+                SqlCommand cmd = new SqlCommand("sp_managecustomers", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@customerId", customerId);
                 cmd.Parameters.AddWithValue("@customerName", customerName);
@@ -64,6 +64,25 @@ namespace DataAccessLayer
                                                     AccountNumber as [Acct. No.] from customerTable", conn);
                 conn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
+                dt.Load(dr);
+                conn.Close();
+                return dt;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally { conn.Close(); }
+        }
+        public DataTable getcustomerAccount()
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                SqlCommand cmd = new SqlCommand(@"Select customerName,mobileNo,AccountNumber from customerTable", conn);
+                conn.Open();    
+                SqlDataReader dr=cmd.ExecuteReader();
                 dt.Load(dr);
                 conn.Close();
                 return dt;
